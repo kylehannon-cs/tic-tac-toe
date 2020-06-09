@@ -41,4 +41,8 @@ describe 'A Tic Tac Toe board' do
 		board.place('z', 2, 2)
 		expect(board.token_at(2,2)).to eq('[2,2]')
 	end
+	it 'has a full board a.k.a cats game' do
+		board = Board.new()
+		expect(board.full?).to be_falsy
+	end
 end
